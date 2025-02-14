@@ -5,7 +5,7 @@ import MovieDetails from "./components/MovieDetails";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/movies-app/">
       <Routes>
         <Route path="/" element={<MovieGrid />} />
         <Route path="/movie/:id" element={<MovieDetails />} />
