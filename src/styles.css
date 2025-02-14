@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f5f5f5;
+  }
+  
+  .filters select,
+  .filters button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .filters .toggle button {
+    margin: 0 0.25rem;
+  }
+  
+  .filters .toggle button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .movie-grid {
+    display: grid;
+    /* Responsive grid with no gaps between posters */
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0;
+    margin: 0;
+  }
+  
+  .movie-card {
+    cursor: pointer;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .movie-details {
+    padding: 1rem;
+  }
+  
+  .details-top {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .details-top img {
+    max-width: 300px;
+  }
+  
+  .info {
+    max-width: 600px;
+  }
+  
+  .reviews {
+    margin-top: 2rem;
+  }
+  
+  .review {
+    border-top: 1px solid #ccc;
+    padding: 1rem 0;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    background: #fff;
+    padding: 1rem;
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
